@@ -9,6 +9,24 @@
 
 /* Styling of header */
 
+.mobile{
+
+    display: none;
+
+}
+
+.bar{
+
+    display: none;
+    
+}
+
+.search-icon{
+
+    display: none;
+
+}
+
 nav{
 
     height: 163px;
@@ -22,6 +40,14 @@ nav{
     position: fixed;
     top: 0;
 
+}
+
+
+.nav-left img{
+
+    width:250px;
+    height:85px;
+    
 }
 
 .nav-links{
@@ -122,6 +148,8 @@ input[type='search']{
 
     justify-content: space-around;
 
+    flex-wrap: wrap;
+
     /* gap: 40px; */
 
 }
@@ -197,4 +225,188 @@ input[type='search']{
     text-align: center;
     font-size: 12px;
     padding-top: 20px;
+}
+
+
+
+.servis{
+
+    min-width: 585px;
+}
+
+
+
+/* MEDIA QUERY */
+
+/* FOR TABLET */
+@media (min-width:425px) and (max-width:768px) {
+
+    nav{
+
+        height: 100px;
+        
+    }
+
+    .logo{
+
+        padding-top: 25px;
+    }
+
+    .nav-left img{
+
+        width:150px;
+        height:65px;
+        
+    }
+
+    .nav-links{
+
+        margin-top: 5px;
+
+    }
+
+    .nav-links a{
+
+        font-size: 0.8rem;
+        padding-inline: 5px;
+        
+    }
+
+    
+    .icon{
+
+    padding-left: 10px;
+    font-size: 1rem;
+    }
+
+    
+    label{
+
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    }
+
+    input[type='search']{
+
+        width: 100px;
+
+    }
+
+    .data-mid-box {
+
+        flex-basis: 50%;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+/* FOR MOBILE */
+@media (max-width:425px) {
+
+    .laptop{
+
+        display: none;
+    }
+
+    .mobile{
+
+        display: block;
+        height: 650px;
+    }
+
+    nav{
+
+        justify-content: center;
+        height: 200px;
+        position: fixed;
+        top: 0px;
+
+    }
+
+    .bar{
+
+        display: block;
+        color: #000;
+        font-size: 1rem;
+        visibility: visible;
+    }
+
+    .icon-font{
+
+        font-size: 1.5rem;
+    }
+
+
+    .logo{
+
+        padding-top: 10px;
+    }
+
+    .nav-left img{
+
+        width: 220px;
+        height: 80px;
+        margin: 0px 70px 20px;
+        
+    }
+
+
+    .nav-links{
+
+        margin-top: 5px;
+        text-align: center;
+
+    }
+
+    .nav-links a{
+
+        font-size: 1rem;
+        font-weight: 500;
+        padding-inline:8px;
+        
+    }
+
+
+    label{
+
+    display: none;
+
+    }
+
+    .search-icon{
+
+        display: inline;
+    }
+
+    .data-mid-box{
+
+        text-align: center;
+    }
+
+    .data-mid{
+
+        flex-direction: column;
+    }
+
+    .data-mid-right{
+        
+        padding: 0px;
+
+    }
+
+    .data-mid-right p{
+
+        text-align: center;
+
+
+    }
+
+
+
+
+
 }
